@@ -1,0 +1,15 @@
+
+/*change the color of the real alert link*/
+#real-alert {
+    color: red;
+}
+
+/*change the color of the test alert link*/
+#test-alert {
+    color: darkblue;
+}
+
+/*make the line stack instead of inline*/
+.missile-link {
+    display: block;
+}

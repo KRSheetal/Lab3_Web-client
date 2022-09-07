@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feedback-styles.css" type="text/css">
+</head>
+
+<body class="m-5">
+
+<div class="jumbotron">
+    <h1>Please provide feedback. You may do so anonymously.</h1>
+</div>
+
+<div class="row"> <!--start of first row-->
+
+   <div class="col-md-5">  <!--start of second row-->
+       <div class="mx-5">
+       <p>
+        As a student, your feedback is important to us.
+        Please include name and email if you'd like a response.
+       </p>
+       </div>
+    </div>
+
+    <div class=col-md-7"> <!--Start of second row-->
+    <form class="mx-5">
+        <div>
+        <label for="name">Name<input id="name" class="form-control" type="text"></label><br>
+        <label for="email">Email<input id="email" class="form-control" type="email"></label><br>
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" class="form-control" required></textarea> <br>
+        </div>
+
+        <div>
+        <p class="form-text">Are you a current student?</p>
+            <div class="form-check">
+                <input class="form-check-input" id="student-current" name="Student-Status" type="radio" checked>
+                <label class="form-check-label" for="student-current">Yes</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="student-notCurrent" name="Student-Status" type="radio">
+                <label class="form-check-label" for="student-notCurrent">No</label>
+            </div>
+        </div>
+
+        <div>
+        <input type="submit" class="btn btn-info mt-4" >
+        </div>
+
+    </form>
+
+       </div> <!--end of second row-->
+</div> <!--end of row-->
+
+</body>
+</html>

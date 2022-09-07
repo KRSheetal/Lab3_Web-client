@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Forms</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+<!--different types of inputs-->
+
+<form>
+
+<label> Enter your name: <input type="text" value="Sheetal" required></label>
+        <br> Enter your email: <input type="email" value="@gmail.com">
+        <br> What's your lucky number? <input type="number" value="000">
+<!--with name attribute to label data value, message received by server "lucky_number":6(eg)-->
+        <br> What's your lucky number? <input name="lucky_number" type="number">
+
+        <br> What's your birthdate? <input type="date">
+        <br> What time is it? <input type="time">
+        <br> Select a number from this range: <input type="range">
+        <br> Choose your favorite color: <input type="color">
+        <br> What's the secret password? <input type="password">
+        <br> Search: <input type ="search">
+        <br> Are you sure? <input type="checkbox">
+
+        <textarea rows="5" cols="10">Default text area</textarea>
+
+        <br>
+        <label>Weather type</label>
+        <select>
+            <option>Sunny</option>
+            <option>Snowy</option>
+            <option>Rainy</option>
+        </select>
+
+        <br>
+        <label>Delivery or Pick-up?</label>
+        <input name="Delivery-method" type="radio" checked="true"><lable>Delivery</lable>
+        <input name="Delivery-method" type="radio"><label>Pickup</label>
+
+        <br>
+<!--add id to click on label to select the option, instead of only check button to select-->
+        <lable>Today or Later?</lable>
+        <input id="delivery-now" name="Delivery-time" type="radio">
+<!--make sure 'id' matches 'for'-->
+        <label for="delivery-now">Now</label>
+
+        <input id="delivery-later" name="Delivery-time" type="radio" checked>
+        <label for="delivery-later">Later</label>
+<br>
+
+    <input type="submit">
+
+</form>
+</body>
+</html>
