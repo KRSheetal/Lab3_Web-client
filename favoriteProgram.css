@@ -1,0 +1,25 @@
+.jumbotron{
+    background-color: #7e225d;
+    color: #2fad7c;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    background-color: #e3bfee;
+    color: #071757;
+}
+
+#github-link{
+    color: #0f319f;
+
+}
+
+pre{
+    color: #0c41a2;
+    font-size: small;
+}
+#program-header{
+    font-size: medium;
+    font-weight: bold;
+}

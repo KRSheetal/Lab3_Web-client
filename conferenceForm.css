@@ -1,0 +1,21 @@
+body{
+background-image: linear-gradient(to bottom right, #c39ce7, #334991, #3a0870);
+    font-family: 'Merriweather', serif;
+    color: #260b46;
+    margin: 20px 25px 10px 10px;
+    outline-style: groove;
+    padding: 6px 6px 6px 6px;
+
+}
+
+h1{
+    text-align: center;
+    color: #2c0319;
+    text-shadow: 5px 5px #60513a;
+}
+
+form{
+    color: #2f2a07;
+    border-style: dotted;
+    border-spacing: 5px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Program-Tip Amount Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="favoriteProgram.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="m-5">
+
+<div class="jumbotron">
+    <h1>This page suggests tip amounts for a food check in a restaurant.</h1>
+</div>
+
+<div class="row"> <!--Start of first row-->
+
+    <div class="col-sm-5">
+        <div class="mx-5">
+           <p> This page will print the amount of tip for various percentages.
+            It will print a table of suggested tip amounts from 10% to 30%, in 5% increments.
+           </p>
+        </div>
+
+        <div id="github-link" class="mx-5">
+            <p>Click to visit this
+                <a href="https://github.com/mctc-itec/lab-2-loops-and-arrays-KRSheetal/blob/main/src/main/java/week_2/Question_2_Tip_Amount_Calculator.java"><u>program</u></a>
+                on GitHub.</p>
+        </div>
+        </div>
+
+
+<div class="col-sm-5"><!--Start of second row-->
+    <form>
+
+        <div>
+            <label for="total">What is the amount of the check?</label> <input id="total" class="form-control" type="number" value="30"><br>
+            <div>
+                <button type="button" class="btn btn-info">Suggest tip amount</button><br>
+            </div>
+
+            <div><br>
+            <label>10% tip $<span><input type="number" readonly placeholder="3.00"></span> total $<span><input type="number" readonly placeholder="33.00"></span></label>
+            <label>15% tip $<span><input type="number" readonly placeholder="4.50"></span> total $<span><input type="number" readonly placeholder="34.50"></span> </label>
+            <label>20% tip $<span><input type="number" readonly placeholder="6.00"></span> total $<span><input type="number" readonly placeholder="36.00"></span> </label>
+            <label>25% tip $<span><input type="number" readonly placeholder="7.50"></span> total $<span><input type="number" readonly placeholder="37.50"></span> </label>
+            <label>30% tip $<span><input type="number" readonly placeholder="9.00"></span> total $<span><input type="number" readonly placeholder="39.00"></span> </label>
+            </div>
+            </div>
+    </form>
+</div>
+
+    </div><!--End of second row-->
+</div> <!--End of first row-->
+
+<pre>
+    <code>
+        <span id="program-header">#Tip calculator program from Java</span>
+        for (int x= 10; x<=30; x=x+5){
+            double tip = (check/100)*x;
+            double total = check+tip;
+            System.out.printf("%d%% tip $%.2f total $%.2f\n",x,tip,total);
+    </code>
+</pre>
+</body>
+</html>

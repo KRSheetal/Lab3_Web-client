@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+    <link rel="stylesheet" href="conferenceForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Merriweather:ital,wght@1,700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<h1>Conference Registration Form</h1>
+<body>
+<form>
+
+  <label for="registrant-name">Registrant's Name<input name="name" id="registrant-name" type="text" maxlength="70" required></label><br>
+  <label for="pass-code">Password<input name="password" id="pass-code" type="password" required></label><br>
+  <label for="email-address">Email<input name="email" id="email-address" type="email" required></label><br>
+  <br>
+  <div>
+  <label for="t-sizes">T-shirt size(All attendees receive a free t-shirt.)</label><br>
+  <select required name="sizes" id="t-sizes">
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+  </select><br>
+  </div>
+
+  <label for="birth-date">Date of Birth<input name="DOB" id="birth-date" type="date" required></label>
+
+  <div>
+    <p class="form-text">Receive email updates?</p>
+    <div class="form-check">
+      <input class="form-check-input" name="email-update" id="yes" type="radio" checked required>
+      <label class="form-check-label" for="yes">Yes</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" name="email-update" id="no" type="radio" required>
+      <label class="form-check-label" for="no" >No</label>
+    </div>
+  </div>
+
+  <div>
+    <p class="form-session">Choose Sessions attending</p>
+    <div class="form-session-check">
+      <input class="form-session-input" name="session-attending" id="morning" type="checkbox">
+      <label class="form-session-label" for="morning">Morning</label>
+    </div>
+    <div class="form-session-check">
+      <input class="form-session-input" name="session-attending" id="afternoon" type="checkbox">
+      <label class="form-session-label" for="afternoon" >Afternoon</label>
+    </div>
+  </div><br>
+
+  <label for="requests">Special Requests</label><br>
+  <textarea id="requests" rows="7" cols="70"></textarea><br>
+
+   <label><input name="submit-button" type="Submit"></label>
+</form>
+
+</body>
+</html>
